@@ -1,10 +1,7 @@
 package cz.trask.cool.demolist;
 
-import cz.trask.cool.list.CoolIterator;
-import cz.trask.cool.list.CoolList;
-import cz.trask.cool.list.linked.CoolLinkedList;
 import cz.trask.helper.Dogs;
-import cz.trask.thing.Dog;
+import cz.trask.pojo.Dog;
 import org.junit.Test;
 
 import java.util.ArrayList;

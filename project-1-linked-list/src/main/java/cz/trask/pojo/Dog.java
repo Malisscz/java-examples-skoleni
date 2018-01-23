@@ -1,4 +1,4 @@
-package cz.trask.thing;
+package cz.trask.pojo;
 
 /**
  * POJO dog

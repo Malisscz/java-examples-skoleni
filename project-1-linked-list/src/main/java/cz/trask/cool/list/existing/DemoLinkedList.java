@@ -2,10 +2,8 @@ package cz.trask.cool.list.existing;
 
 import cz.trask.cool.list.CoolIterator;
 import cz.trask.cool.list.CoolList;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
@@ -79,7 +77,7 @@ public class DemoLinkedList extends LinkedList implements CoolList {
 	//--- z CoolListu
 
 	public CoolIterator getCoolIterator(){
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	//--- z CoolListu - END

@@ -2,9 +2,8 @@ package cz.trask.cool.list.linked;
 
 import cz.trask.cool.list.CoolIterator;
 import cz.trask.cool.list.CoolList;
-import cz.trask.cool.list.existing.DemoLinkedList;
 import cz.trask.helper.Dogs;
-import cz.trask.thing.Dog;
+import cz.trask.pojo.Dog;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

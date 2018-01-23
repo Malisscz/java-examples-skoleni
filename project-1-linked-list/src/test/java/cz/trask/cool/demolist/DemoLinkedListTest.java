@@ -1,11 +1,8 @@
 package cz.trask.cool.demolist;
 
-import cz.trask.cool.list.CoolIterator;
-import cz.trask.cool.list.CoolList;
 import cz.trask.helper.Dogs;
 import cz.trask.cool.list.SimpleCoolList;
 import cz.trask.cool.list.existing.DemoLinkedList;
-import cz.trask.thing.Dog;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

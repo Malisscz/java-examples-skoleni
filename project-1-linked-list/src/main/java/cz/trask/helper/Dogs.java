@@ -1,6 +1,6 @@
 package cz.trask.helper;
 
-import cz.trask.thing.Dog;
+import cz.trask.pojo.Dog;
 
 /**
  * Trida co v sobe ma nejaky vytvoreny psíky abychom je nemuseli furt vytvaret :)

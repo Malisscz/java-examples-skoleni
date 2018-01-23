@@ -16,8 +16,6 @@ public class LinkedListDemo {
 
 			demoLinkedList.addAsLast(Dogs.dog1);
 
-
-
 		} catch (Exception e) {
 			System.out.println(e);
 			e.printStackTrace();

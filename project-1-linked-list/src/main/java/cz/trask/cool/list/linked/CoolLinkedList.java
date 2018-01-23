@@ -2,7 +2,6 @@ package cz.trask.cool.list.linked;
 
 import cz.trask.cool.list.CoolIterator;
 import cz.trask.cool.list.CoolList;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Collection;
 
@@ -64,19 +63,17 @@ public class CoolLinkedList implements CoolList {
 
 	//--------
 
-
-
 	public CoolIterator getCoolIterator() {
 
 		//TODO dokoncit anonymni tridu
 		return new CoolIterator() {
 
 			public boolean hasNext() {
-				throw new NotImplementedException();
+				throw new UnsupportedOperationException();
 			}
 
 			public Object next() {
-				throw new NotImplementedException();
+				throw new UnsupportedOperationException();
 			}
 		};
 
