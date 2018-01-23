@@ -1,0 +1,27 @@
+syntax: glob
+version
+target
+bin
+*.zip
+*.war
+*.zip.md5
+.idea
+*.ids
+*.iml
+*.ipr
+*.iws
+*.class
+*.swp
+*.tern-project
+*.jar
+.DS_Store
+.classpath
+.project
+.settings
+*.MF
+.sass-cache
+private/*
+*/build
+*/bin
+*/target
+*/test-output
