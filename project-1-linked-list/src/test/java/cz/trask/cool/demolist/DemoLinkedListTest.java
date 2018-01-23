@@ -1,22 +1,17 @@
 package cz.trask.cool.demolist;
 
+import cz.trask.cool.list.CoolIterator;
+import cz.trask.cool.list.CoolList;
+import cz.trask.helper.Dogs;
 import cz.trask.cool.list.SimpleCoolList;
 import cz.trask.cool.list.existing.DemoLinkedList;
-import cz.trask.cool.list.linked.SimpleLinkedList;
 import cz.trask.thing.Dog;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class DemoLinkedListTest {
 
-	final Dog dog1 = new Dog("Max");
-	final Dog dog2 = new Dog("Bella");
-	final Dog dog3 = new Dog("Cooper");
-	final Dog dog4 = new Dog("Charlie");
-	final Dog dog5 = new Dog("Lucy");
-	final Dog dog6 = new Dog("Daisy");
 
 	@Test
 	public void addAndRemoveTest() {
@@ -25,10 +20,10 @@ public class DemoLinkedListTest {
 
 		SimpleCoolList firstList = new DemoLinkedList();
 
-		firstList.addAsLast(dog1);
-		firstList.addAsLast(dog2);
-		firstList.addAsLast(dog3);
-		firstList.addAsLast(dog4);
+		firstList.addAsLast(Dogs.dog1);
+		firstList.addAsLast(Dogs.dog2);
+		firstList.addAsLast(Dogs.dog3);
+		firstList.addAsLast(Dogs.dog4);
 
 		assertEquals(4,firstList.getListSize());
 
@@ -55,27 +50,27 @@ public class DemoLinkedListTest {
 		SimpleCoolList anotherList = new DemoLinkedList();
 
 
-		anotherList.addAsLast(dog1);
-		anotherList.addAsLast(dog5);
-		anotherList.addAsLast(dog6);
+		anotherList.addAsLast(Dogs.dog1);
+		anotherList.addAsLast(Dogs.dog5);
+		anotherList.addAsLast(Dogs.dog6);
 
 		assertEquals(3,anotherList.getListSize());
 
 		Object lastDog = anotherList.getLastElement();
 
-		assertEquals(dog6,lastDog);
+		assertEquals(Dogs.dog6,lastDog);
 
 		anotherList.removeLastElement();
 
 		Object nowLastDog = anotherList.getLastElement();
 
-		assertEquals(dog5,nowLastDog);
+		assertEquals(Dogs.dog5,nowLastDog);
 
 		anotherList.removeLastElement();
 
 		Object lastAndFirstDog = anotherList.getLastElement();
 
-		assertEquals(dog1,lastAndFirstDog);
+		assertEquals(Dogs.dog1,lastAndFirstDog);
 
 		anotherList.removeLastElement();
 
@@ -92,27 +87,27 @@ public class DemoLinkedListTest {
 
 		SimpleCoolList anotherList = new DemoLinkedList();
 
-		anotherList.addAsLast(dog2);
-		anotherList.addAsLast(dog1);
-		anotherList.addAsLast(dog6);
+		anotherList.addAsLast(Dogs.dog2);
+		anotherList.addAsLast(Dogs.dog1);
+		anotherList.addAsLast(Dogs.dog6);
 
 		assertEquals(3,anotherList.getListSize());
 
 		Object lastDog = anotherList.getLastElement();
 
-		assertEquals(dog3,lastDog);
+		assertEquals(Dogs.dog3,lastDog);
 
 		anotherList.removeLastElement();
 
 		Object nowLastDog = anotherList.getLastElement();
 
-		assertEquals(dog5,nowLastDog);
+		assertEquals(Dogs.dog5,nowLastDog);
 
 		anotherList.removeLastElement();
 
 		Object lastAndFirstDog = anotherList.getLastElement();
 
-		assertEquals(dog1,lastAndFirstDog);
+		assertEquals(Dogs.dog1,lastAndFirstDog);
 
 		anotherList.removeLastElement();
 
@@ -121,6 +116,5 @@ public class DemoLinkedListTest {
 		System.out.println("will fail test - finished");
 
 	}
-
 
 }

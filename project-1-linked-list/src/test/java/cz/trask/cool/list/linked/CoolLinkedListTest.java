@@ -1,7 +1,7 @@
 package cz.trask.cool.list.linked;
 
+import cz.trask.helper.Dogs;
 import cz.trask.cool.list.SimpleCoolList;
-import cz.trask.thing.Dog;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,23 +9,18 @@ import static org.junit.Assert.assertEquals;
 
 public class CoolLinkedListTest {
 
-	final Dog dog1 = new Dog("Max");
-	final Dog dog2 = new Dog("Bella");
-	final Dog dog3 = new Dog("Cooper");
-	final Dog dog4 = new Dog("Charlie");
-	final Dog dog5 = new Dog("Lucy");
-	final Dog dog6 = new Dog("Daisy");
+
 
 	@Before
 	public void setUp() throws Exception {
 
 		System.out.println("Dogs: ");
-		System.out.println(dog1);
-		System.out.println(dog2);
-		System.out.println(dog3);
-		System.out.println(dog4);
-		System.out.println(dog5);
-		System.out.println(dog6);
+		System.out.println(Dogs.dog1);
+		System.out.println(Dogs.dog2);
+		System.out.println(Dogs.dog3);
+		System.out.println(Dogs.dog4);
+		System.out.println(Dogs.dog5);
+		System.out.println(Dogs.dog6);
 	}
 
 	@Test
@@ -35,10 +30,10 @@ public class CoolLinkedListTest {
 
 		SimpleCoolList firstList = new SimpleLinkedList();
 
-		firstList.addAsLast(dog1);
-		firstList.addAsLast(dog2);
-		firstList.addAsLast(dog3);
-		firstList.addAsLast(dog4);
+		firstList.addAsLast(Dogs.dog1);
+		firstList.addAsLast(Dogs.dog2);
+		firstList.addAsLast(Dogs.dog3);
+		firstList.addAsLast(Dogs.dog4);
 
 		assertEquals(4,firstList.getListSize());
 
@@ -65,27 +60,27 @@ public class CoolLinkedListTest {
 		SimpleCoolList anotherList = new SimpleLinkedList();
 
 
-		anotherList.addAsLast(dog1);
-		anotherList.addAsLast(dog2);
-		anotherList.addAsLast(dog3);
+		anotherList.addAsLast(Dogs.dog1);
+		anotherList.addAsLast(Dogs.dog2);
+		anotherList.addAsLast(Dogs.dog3);
 
 		assertEquals(3,anotherList.getListSize());
 
 		Object lastDog = anotherList.getLastElement();
 
-		assertEquals(dog3,lastDog);
+		assertEquals(Dogs.dog3,lastDog);
 
 		anotherList.removeLastElement();
 
 		Object nowLastDog = anotherList.getLastElement();
 
-		assertEquals(dog2,nowLastDog);
+		assertEquals(Dogs.dog2,nowLastDog);
 
 		anotherList.removeLastElement();
 
 		Object lastAndFirstDog = anotherList.getLastElement();
 
-		assertEquals(dog1,lastAndFirstDog);
+		assertEquals(Dogs.dog1,lastAndFirstDog);
 
 		anotherList.removeLastElement();
 

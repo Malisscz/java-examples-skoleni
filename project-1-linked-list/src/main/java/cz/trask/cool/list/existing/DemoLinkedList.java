@@ -1,13 +1,19 @@
 package cz.trask.cool.list.existing;
 
-import cz.trask.cool.list.SimpleCoolList;
+import cz.trask.cool.list.CoolIterator;
+import cz.trask.cool.list.CoolList;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
  * Linked list based on java's own linkedList for testing purpose
  */
-public class DemoLinkedList extends LinkedList implements SimpleCoolList {
+public class DemoLinkedList extends LinkedList implements CoolList {
+
+	//--- z SimpleCoolListu
 
 	public int getListSize() {
 		return size();
@@ -42,5 +48,40 @@ public class DemoLinkedList extends LinkedList implements SimpleCoolList {
 	public void clearList() {
 		clear();
 	}
+
+
+	//--- z SimpleCoolListu - END
+
+
+
+	//--- z IndexAccessListu
+
+	public boolean addAllToEndOfList(Collection c) {
+		return addAll(c);
+	}
+
+	public Object replaceAtPosition(int index, Object element) {
+		return set(index, element);
+	}
+
+	public void addAtPosition(int index, Object element) {
+		add(index, element);
+	}
+
+	public Object removeAtPosition(int index) {
+		return remove(index);
+	}
+
+
+	//--- z IndexAccessListu - END
+
+
+	//--- z CoolListu
+
+	public CoolIterator getCoolIterator(){
+		throw new NotImplementedException();
+	}
+
+	//--- z CoolListu - END
 
 }

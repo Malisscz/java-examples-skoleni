@@ -1,10 +1,8 @@
 package cz.trask.cool.list.linked;
 
-import cz.trask.cool.list.CoolList;
-
 import java.util.Collection;
 
-public class IndexAccessList implements CoolList {
+public class IndexAccessList implements cz.trask.cool.list.IndexAccessList {
 
 	public boolean addAllToEndOfList(Collection c) {
 		return false;

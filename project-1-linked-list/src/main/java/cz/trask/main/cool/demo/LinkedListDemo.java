@@ -1,7 +1,8 @@
 package cz.trask.main.cool.demo;
 
-import cz.trask.cool.list.CoolList;
-import cz.trask.cool.list.linked.SimpleLinkedList;
+import cz.trask.cool.list.SimpleCoolList;
+import cz.trask.cool.list.existing.DemoLinkedList;
+import cz.trask.helper.Dogs;
 
 public class LinkedListDemo {
 
@@ -10,6 +11,11 @@ public class LinkedListDemo {
 		try {
 
 			System.out.println("Cool linkedList main execute ...");
+
+			SimpleCoolList demoLinkedList = new DemoLinkedList();
+
+			demoLinkedList.addAsLast(Dogs.dog1);
+
 
 
 		} catch (Exception e) {
